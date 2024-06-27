@@ -1,0 +1,133 @@
+[+] starting exploit localy...
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0FF8B340+0FECB340 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2J[0m.fail to initialize ptp_kvm
+
+Boot took 2.68 seconds
+
+__________________ .____       _____    _______  ________   
+\______   \_____  \|    |     /  _  \   \      \ \______ \  
+ |     ___/ _(__  <|    |    /  /_\  \  /   |   \ |    |  \ 
+ |    |    /       \    |___/    |    \/    |    \|    `   \
+ |____|   /______  /_______ \____|__  /\____|__  /_______  /
+                 \/        \/       \/         \/        \/ 
+/ $ ./s[Jexp/ $ ./exploit [J
+[*] canary: e7a173b2bac79400
+[*] kbase: ffffffff81000000
+[*] pwned!!!
+/ # cat /pro/ # cat /proc/[Jsl/ # cat /proc/slabinfo [J
+slabinfo - version: 2.1
+# name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab> : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_slabs> <sharedavail>
+RAWv6                 14     14   1152   14    4 : tunables    0    0    0 : slabdata      1      1      0
+UDPv6                  0      0   1280   12    4 : tunables    0    0    0 : slabdata      0      0      0
+tw_sock_TCPv6          0      0    240   17    1 : tunables    0    0    0 : slabdata      0      0      0
+request_sock_TCPv6      0      0    304   13    1 : tunables    0    0    0 : slabdata      0      0      0
+TCPv6                  0      0   2432   13    8 : tunables    0    0    0 : slabdata      0      0      0
+scsi_sense_cache      32     32    128   32    1 : tunables    0    0    0 : slabdata      1      1      0
+virtio_scsi_cmd       84     84    192   21    1 : tunables    0    0    0 : slabdata      4      4      0
+jbd2_transaction_s      0      0    256   16    1 : tunables    0    0    0 : slabdata      0      0      0
+jbd2_journal_head      0      0    120   34    1 : tunables    0    0    0 : slabdata      0      0      0
+jbd2_revoke_table_s      0      0     16  256    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_fc_dentry_update      0      0     80   51    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_inode_cache       0      0   1104   14    4 : tunables    0    0    0 : slabdata      0      0      0
+ext4_allocation_context      0      0    144   28    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_io_end            0      0     64   64    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_pending_reservation      0      0     32  128    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_extent_status      0      0     40  102    1 : tunables    0    0    0 : slabdata      0      0      0
+mbcache                0      0     56   73    1 : tunables    0    0    0 : slabdata      0      0      0
+dio                    0      0    640   12    2 : tunables    0    0    0 : slabdata      0      0      0
+ip4-frags              0      0    200   20    1 : tunables    0    0    0 : slabdata      0      0      0
+RAW                    8      8   1024    8    2 : tunables    0    0    0 : slabdata      1      1      0
+UDP                    0      0   1152   14    4 : tunables    0    0    0 : slabdata      0      0      0
+tw_sock_TCP            0      0    240   17    1 : tunables    0    0    0 : slabdata      0      0      0
+request_sock_TCP       0      0    304   13    1 : tunables    0    0    0 : slabdata      0      0      0
+TCP                    0      0   2176   15    8 : tunables    0    0    0 : slabdata      0      0      0
+ep_head                0      0     16  256    1 : tunables    0    0    0 : slabdata      0      0      0
+request_queue         17     17   1864   17    8 : tunables    0    0    0 : slabdata      1      1      0
+biovec-max            40     40   4096    8    8 : tunables    0    0    0 : slabdata      5      5      0
+biovec-64              8      8   1024    8    2 : tunables    0    0    0 : slabdata      1      1      0
+sock_inode_cache      18     18    896    9    2 : tunables    0    0    0 : slabdata      2      2      0
+skbuff_fclone_cache      8      8    512    8    1 : tunables    0    0    0 : slabdata      1      1      0
+skbuff_head_cache     16     16    256   16    1 : tunables    0    0    0 : slabdata      1      1      0
+file_lock_cache       18     18    216   18    1 : tunables    0    0    0 : slabdata      1      1      0
+fsnotify_mark_connector    128    128     32  128    1 : tunables    0    0    0 : slabdata      1      1      0
+net_namespace          8      8   2048    8    4 : tunables    0    0    0 : slabdata      1      1      0
+buffer_head            0      0    104   39    1 : tunables    0    0    0 : slabdata      0      0      0
+proc_dir_entry       273    273    192   21    1 : tunables    0    0    0 : slabdata     13     13      0
+pde_opener           102    102     40  102    1 : tunables    0    0    0 : slabdata      1      1      0
+proc_inode_cache      72     72    672   12    2 : tunables    0    0    0 : slabdata      6      6      0
+seq_file              34     34    120   34    1 : tunables    0    0    0 : slabdata      1      1      0
+bdev_cache            11     11   1472   11    4 : tunables    0    0    0 : slabdata      1      1      0
+shmem_inode_cache   1045   1045    704   11    2 : tunables    0    0    0 : slabdata     95     95      0
+kernfs_iattrs_cache      0      0     88   46    1 : tunables    0    0    0 : slabdata      0      0      0
+mnt_cache             24     24    320   12    1 : tunables    0    0    0 : slabdata      2      2      0
+inode_cache         3783   3783    600   13    2 : tunables    0    0    0 : slabdata    291    291      0
+dentry              4893   4893    192   21    1 : tunables    0    0    0 : slabdata    233    233      0
+names_cache            8      8   4096    8    8 : tunables    0    0    0 : slabdata      1      1      0
+uts_namespace          0      0    432    9    1 : tunables    0    0    0 : slabdata      0      0      0
+vm_area_struct        66     66    184   22    1 : tunables    0    0    0 : slabdata      3      3      0
+mm_struct             16     16   1024    8    2 : tunables    0    0    0 : slabdata      2      2      0
+files_cache           11     11    704   11    2 : tunables    0    0    0 : slabdata      1      1      0
+signal_cache          40     40    960    8    2 : tunables    0    0    0 : slabdata      5      5      0
+sighand_cache         45     45   2112   15    8 : tunables    0    0    0 : slabdata      3      3      0
+task_struct           44     44   2944   11    8 : tunables    0    0    0 : slabdata      4      4      0
+anon_vma              46     46     88   46    1 : tunables    0    0    0 : slabdata      1      1      0
+pid                14432  14432    128   32    1 : tunables    0    0    0 : slabdata    451    451      0
+Acpi-Operand        1064   1064     72   56    1 : tunables    0    0    0 : slabdata     19     19      0
+Acpi-Parse            73     73     56   73    1 : tunables    0    0    0 : slabdata      1      1      0
+Acpi-State           153    153     80   51    1 : tunables    0    0    0 : slabdata      3      3      0
+Acpi-Namespace       510    510     48   85    1 : tunables    0    0    0 : slabdata      6      6      0
+perf_event             0      0    968    8    2 : tunables    0    0    0 : slabdata      0      0      0
+pool_workqueue        96     96    256   16    1 : tunables    0    0    0 : slabdata      6      6      0
+radix_tree_node      322    322    584   14    2 : tunables    0    0    0 : slabdata     23     23      0
+vmap_area            192    192     64   64    1 : tunables    0    0    0 : slabdata      3      3      0
+dma-kmalloc-8k         0      0   8192    4    8 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-4k         0      0   4096    8    8 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-2k         0      0   2048    8    4 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-1k         0      0   1024    8    2 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-512        0      0    512    8    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-256        0      0    256   16    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-128        0      0    128   32    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-64         0      0     64   64    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-32         0      0     32  128    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-16         0      0     16  256    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-8          0      0      8  512    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-192        0      0    192   21    1 : tunables    0    0    0 : slabdata      0      0      0
+dma-kmalloc-96         0      0     96   42    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-8k         0      0   8192    4    8 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-4k         0      0   4096    8    8 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-2k         0      0   2048    8    4 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-1k         0      0   1024    8    2 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-512        0      0    512    8    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-256        0      0    256   16    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-192        0      0    192   21    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-128        0      0    128   32    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-96         0      0     96   42    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-64         0      0     64   64    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-32         0      0     32  128    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-16         0      0     16  256    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-rcl-8          0      0      8  512    1 : tunables    0    0    0 : slabdata      0      0      0
+kmalloc-8k             4      4   8192    4    8 : tunables    0    0    0 : slabdata      1      1      0
+kmalloc-4k            32     32   4096    8    8 : tunables    0    0    0 : slabdata      4      4      0
+kmalloc-2k           136    136   2048    8    4 : tunables    0    0    0 : slabdata     17     17      0
+kmalloc-1k           752    752   1024    8    2 : tunables    0    0    0 : slabdata     94     94      0
+kmalloc-512          160    160    512    8    1 : tunables    0    0    0 : slabdata     20     20      0
+kmalloc-256          848    848    256   16    1 : tunables    0    0    0 : slabdata     53     53      0
+kmalloc-192          168    168    192   21    1 : tunables    0    0    0 : slabdata      8      8      0
+kmalloc-128          256    256    128   32    1 : tunables    0    0    0 : slabdata      8      8      0
+kmalloc-96           294    294     96   42    1 : tunables    0    0    0 : slabdata      7      7      0
+kmalloc-64           704    704     64   64    1 : tunables    0    0    0 : slabdata     11     11      0
+kmalloc-32           512    512     32  128    1 : tunables    0    0    0 : slabdata      4      4      0
+kmalloc-16           768    768     16  256    1 : tunables    0    0    0 : slabdata      3      3      0
+kmalloc-8           3072   3072      8  512    1 : tunables    0    0    0 : slabdata      6      6      0
+kmem_cache_node      128    128     64   64    1 : tunables    0    0    0 : slabdata      2      2      0
+kmem_cache           112    112    256   16    1 : tunables    0    0    0 : slabdata      7      7      0
+/ # 
+Segmentation fault
+/ $ q/ $ [J
+reboot: Power down
